@@ -1,0 +1,48 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.flex{
+  flex-direction:row;//この2つで横並びになる
+  flex-wrap: wrap;
+}
+.maccha{
+  &__inner{
+    padding: 50px;
+  }
+  &__texts,
+  &__img{
+    flex-basis: 47%;
+  }
+  &__texts{
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.dessert{
+  
+  &__item{
+    flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+}
+.kinds{
+  &__container{
+    
+    justify-content: space-between;//左右による
+  }
+  &__item{
+    flex-basis: 47%;
+  }
+}
+.footer{
+  & .logo{
+    justify-content:flex-start ;
+  }
+  &__li{
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
